@@ -7,3 +7,9 @@ I'm learning Azure and wanted to build a project that solves a real problem inst
 
 Here's My Project Under Construction  🚧 
 ![AzureResumeAI Homepage](screenshots/home.png)
+
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+
+![Flask](https://img.shields.io/badge/Flask-Web_App-black)
+
+![Azure](https://img.shields.io/badge/Microsoft-Azure-0078D4)
