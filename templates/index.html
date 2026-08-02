@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AzureResumeAI</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Segoe UI',sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0078D4,#61B4FF);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            padding:30px;
+        }
+
+        .container{
+            width:800px;
+            background:#fff;
+            border-radius:20px;
+            padding:45px;
+            text-align:center;
+            box-shadow:0 20px 45px rgba(0,0,0,.15);
+        }
+
+        h1{
+            color:#0078D4;
+            font-size:50px;
+            margin-bottom:10px;
+        }
+
+        .badge{
+            display:inline-block;
+            padding:8px 18px;
+            background:#E8F3FF;
+            color:#0078D4;
+            border:1px solid #0078D4;
+            border-radius:30px;
+            font-size:14px;
+            font-weight:600;
+            margin-bottom:25px;
+        }
+
+        p{
+            color:#555;
+            font-size:18px;
+            line-height:1.7;
+        }
+
+        .upload-box{
+            margin-top:35px;
+            border:2px dashed #0078D4;
+            border-radius:15px;
+            padding:45px;
+        }
+
+        .upload-box p{
+            font-size:20px;
+            color:#333;
+            margin-bottom:20px;
+        }
+
+        button{
+            margin-top:15px;
+            padding:14px 35px;
+            border:none;
+            border-radius:8px;
+            background:#0078D4;
+            color:white;
+            font-size:17px;
+            cursor:pointer;
+            transition:.3s;
+        }
+
+        button:hover{
+            background:#005A9E;
+        }
+
+        .features{
+            display:flex;
+            justify-content:space-between;
+            margin-top:40px;
+            gap:20px;
+        }
+
+        .card{
+            flex:1;
+            background:#F4F8FF;
+            border-radius:12px;
+            padding:20px;
+        }
+
+        .card h3{
+            color:#0078D4;
+            margin-bottom:12px;
+        }
+
+        .card p{
+            font-size:15px;
+            color:#555;
+        }
+
+        footer{
+            margin-top:40px;
+            color:#777;
+            font-size:14px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>AzureResumeAI</h1>
+
+    <span class="badge">
+        🚧 Under Development
+    </span>
+
+    <p>
+        Analyze your resume with AI. Extract skills, evaluate your profile,
+        and receive intelligent insights powered by Microsoft Azure AI.
+    </p>
+
+    <div class="upload-box">
+
+        <p>📄 Drag & Drop your resume here</p>
+
+        <p>or</p>
+
+        <button>Upload Resume</button>
+
+    </div>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>🧠 Skill Extraction</h3>
+            <p>Automatically identify technical skills from uploaded resumes.</p>
+        </div>
+
+        <div class="card">
+            <h3>📊 Resume Analysis</h3>
+            <p>Evaluate resume quality, structure, and completeness.</p>
+        </div>
+
+        <div class="card">
+            <h3>☁️ Azure Intelligence</h3>
+            <p>Future integration with Microsoft Azure AI Services.</p>
+        </div>
+
+    </div>
+
+    <footer>
+        Built with ❤️ using Python • Flask • Microsoft Azure AI
+    </footer>
+
+</div>
+
+</body>
+
+</html>
