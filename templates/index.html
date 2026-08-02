@@ -2,120 +2,248 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AzureResumeAI</title>
 
-    <style>
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:'Segoe UI',sans-serif;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        body{
-            background:linear-gradient(135deg,#0078D4,#61B4FF);
-            min-height:100vh;
-            display:flex;
-            justify-content:center;
-            align-items:center;
-            padding:30px;
-        }
+<title>AzureResumeAI</title>
 
-        .container{
-            width:800px;
-            background:#fff;
-            border-radius:20px;
-            padding:45px;
-            text-align:center;
-            box-shadow:0 20px 45px rgba(0,0,0,.15);
-        }
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        h1{
-            color:#0078D4;
-            font-size:50px;
-            margin-bottom:10px;
-        }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-        .badge{
-            display:inline-block;
-            padding:8px 18px;
-            background:#E8F3FF;
-            color:#0078D4;
-            border:1px solid #0078D4;
-            border-radius:30px;
-            font-size:14px;
-            font-weight:600;
-            margin-bottom:25px;
-        }
+<style>
 
-        p{
-            color:#555;
-            font-size:18px;
-            line-height:1.7;
-        }
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
 
-        .upload-box{
-            margin-top:35px;
-            border:2px dashed #0078D4;
-            border-radius:15px;
-            padding:45px;
-        }
+body{
 
-        .upload-box p{
-            font-size:20px;
-            color:#333;
-            margin-bottom:20px;
-        }
+background:linear-gradient(180deg,#FFF8FA,#FFEFF5,#FFF8FA);
 
-        button{
-            margin-top:15px;
-            padding:14px 35px;
-            border:none;
-            border-radius:8px;
-            background:#0078D4;
-            color:white;
-            font-size:17px;
-            cursor:pointer;
-            transition:.3s;
-        }
+min-height:100vh;
 
-        button:hover{
-            background:#005A9E;
-        }
+display:flex;
 
-        .features{
-            display:flex;
-            justify-content:space-between;
-            margin-top:40px;
-            gap:20px;
-        }
+justify-content:center;
 
-        .card{
-            flex:1;
-            background:#F4F8FF;
-            border-radius:12px;
-            padding:20px;
-        }
+align-items:center;
 
-        .card h3{
-            color:#0078D4;
-            margin-bottom:12px;
-        }
+padding:40px;
 
-        .card p{
-            font-size:15px;
-            color:#555;
-        }
+}
 
-        footer{
-            margin-top:40px;
-            color:#777;
-            font-size:14px;
-        }
+.container{
 
-    </style>
+width:900px;
+
+background:white;
+
+border-radius:30px;
+
+padding:55px;
+
+box-shadow:
+0 15px 40px rgba(233,180,193,.25);
+
+border:1px solid #FFE4EC;
+
+}
+
+.logo{
+
+font-size:52px;
+
+font-weight:700;
+
+color:#D47C9A;
+
+margin-bottom:10px;
+
+}
+
+.badge{
+
+display:inline-block;
+
+background:#FFE7F0;
+
+color:#D47C9A;
+
+padding:10px 20px;
+
+border-radius:30px;
+
+font-size:14px;
+
+font-weight:600;
+
+margin-bottom:25px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+color:#6B6B6B;
+
+line-height:1.8;
+
+margin-bottom:40px;
+
+}
+
+.upload{
+
+border:2px dashed #F4B8C8;
+
+border-radius:20px;
+
+padding:45px;
+
+background:#FFF9FB;
+
+transition:.3s;
+
+}
+
+.upload:hover{
+
+background:#FFF2F6;
+
+}
+
+.upload h2{
+
+color:#C76D8E;
+
+margin-bottom:15px;
+
+}
+
+.upload p{
+
+color:#777;
+
+}
+
+button{
+
+margin-top:30px;
+
+background:#E89CB2;
+
+border:none;
+
+color:white;
+
+padding:15px 40px;
+
+font-size:17px;
+
+border-radius:50px;
+
+cursor:pointer;
+
+transition:.3s;
+
+font-weight:600;
+
+}
+
+button:hover{
+
+background:#D982A1;
+
+transform:translateY(-2px);
+
+box-shadow:0 10px 20px rgba(216,130,161,.35);
+
+}
+
+.cards{
+
+display:flex;
+
+gap:20px;
+
+margin-top:45px;
+
+}
+
+.card{
+
+flex:1;
+
+background:#FFF8FA;
+
+border-radius:18px;
+
+padding:25px;
+
+text-align:center;
+
+transition:.3s;
+
+border:1px solid #FFE5EC;
+
+}
+
+.card:hover{
+
+transform:translateY(-6px);
+
+box-shadow:0 15px 25px rgba(231,170,190,.25);
+
+}
+
+.card h3{
+
+color:#D47C9A;
+
+margin-bottom:12px;
+
+font-size:22px;
+
+}
+
+.card p{
+
+color:#666;
+
+font-size:15px;
+
+line-height:1.6;
+
+}
+
+footer{
+
+margin-top:45px;
+
+text-align:center;
+
+font-size:14px;
+
+color:#999;
+
+}
+
+.sparkles{
+
+font-size:26px;
+
+margin-right:8px;
+
+}
+
+</style>
 
 </head>
 
@@ -123,49 +251,95 @@
 
 <div class="container">
 
-    <h1>AzureResumeAI</h1>
+<div class="logo">
 
-    <span class="badge">
-        🚧 Under Development
-    </span>
+🎀 AzureResumeAI
 
-    <p>
-        Analyze your resume with AI. Extract skills, evaluate your profile,
-        and receive intelligent insights powered by Microsoft Azure AI.
-    </p>
+</div>
 
-    <div class="upload-box">
+<div class="badge">
 
-        <p>📄 Drag & Drop your resume here</p>
+✨ Version 0.1 • Under Development
 
-        <p>or</p>
+</div>
 
-        <button>Upload Resume</button>
+<div class="subtitle">
 
-    </div>
+Analyze your resume with AI, discover your strengths, identify technical skills,
+and unlock smarter career insights with future Microsoft Azure AI integration.
 
-    <div class="features">
+</div>
 
-        <div class="card">
-            <h3>🧠 Skill Extraction</h3>
-            <p>Automatically identify technical skills from uploaded resumes.</p>
-        </div>
+<div class="upload">
 
-        <div class="card">
-            <h3>📊 Resume Analysis</h3>
-            <p>Evaluate resume quality, structure, and completeness.</p>
-        </div>
+<h2>📄 Upload Your Resume</h2>
 
-        <div class="card">
-            <h3>☁️ Azure Intelligence</h3>
-            <p>Future integration with Microsoft Azure AI Services.</p>
-        </div>
+<p>
 
-    </div>
+Drag & Drop your PDF here
 
-    <footer>
-        Built with ❤️ using Python • Flask • Microsoft Azure AI
-    </footer>
+<br><br>
+
+or
+
+</p>
+
+<button>
+
+🎀 Upload Resume
+
+</button>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+
+<h3>🧠 Skill Extraction</h3>
+
+<p>
+
+Automatically detect programming languages,
+frameworks, tools, and technologies.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>📊 Resume Insights</h3>
+
+<p>
+
+Analyze resume quality,
+structure, and ATS readiness.
+
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>☁️ Azure AI</h3>
+
+<p>
+
+Future integration with Microsoft Azure AI
+for intelligent resume analysis.
+
+</p>
+
+</div>
+
+</div>
+
+<footer>
+
+Made with 💗 by Kruthi • Python • Flask • Azure AI
+
+</footer>
 
 </div>
 
